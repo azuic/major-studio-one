@@ -1,4 +1,4 @@
 # major-studio-one
 
 #### Week 3
-Sketch of quantitative visualization [](./Quantitative)
+Sketch of quantitative visualization [](../blob/master/Quantitative)
