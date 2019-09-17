@@ -13,17 +13,22 @@ def img_from_url(url):
     return img
 
 
-path = os.fsencode("./ceramics")
+project_dir = "/Users/zuic/PycharmProjects/major-studio-1/"
 
-with os.scandir(path) as it:
-    for entry in it:
-        if not entry.name.startswith('.') and entry.is_file():
-            with open(entry) as json_file:
+for subdir, dirs, files in os.walk(os.path.join(project_dir, "ceramics")):
+    for i, file in enumerate(files):
+        if file.endswith(".json"):
+            with open(os.path.join(subdir, file)) as json_file:
                 obj = json.load(json_file)
             obj_img = {'objectID': obj['objectID']}
             if 'primaryImage' in obj and obj['primaryImage'] != "":
-                obj_img['image'] = img_from_url(obj['primaryImage'])
+                obj_img['image'] = img_from_url(obj['primaryImage']).tolist()
+                print("[{}/{}] Object ID: {} image found".format(i + 1, len(files), str(obj['objectID'])))
             else:
                 obj_img['image'] = []
-            with open("./ceramics_images/IMG_OBJ_" + str(entry.name) + ".json", 'w') as outfile:
+                print("********" + "[{}/{}] Object ID: {} NO  IMAGE".format(i + 1, len(files), str(obj['objectID'])))
+            with open(os.path.join(project_dir, "ceramics_images", str(obj['objectID']) + ".json"), 'w') as outfile:
                 json.dump(obj_img, outfile)
+
+
+
