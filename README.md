@@ -7,4 +7,4 @@
 [Gateaway](https://azuic.github.io/the-met-ceramics/)
 
 #### Interactive Sketches
-[](https://github.com/azuic/major-studio-one/tree/master/Interactive/index.html)
+[Go to folder](https://github.com/azuic/major-studio-one/tree/master/Interactive/index.html)
