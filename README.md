@@ -10,5 +10,5 @@
 [Go to folder](https://github.com/azuic/major-studio-one/tree/master/Interactive/index.html)
 
 #### Interactive Final
-[Go to repo](https://github.com/azuic/the-met-toy-gashapon)
+[Go to repo](https://github.com/azuic/the-met-toy-gashapon)  
 [Go to site](https://the-met-toys.herokuapp.com/)
