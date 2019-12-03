@@ -17,18 +17,24 @@ h1 {
   letter-spacing: 6px;
 }
 
+/* .container{
+  width: 5%;
+  height: 5%;
+  justify-content: center;
+} */
+
 .pad {
-  width: 500px;
+  width: 800px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .box {
-  width: 100px;
-  height: 100px;
-  margin: 10px 0;
-  box-shadow: 0 8px 6px -6px black;
+  width: 150px;
+  height: 150px;
+  margin: 20px 0;
+  /*box-shadow: 0 8px 6px -6px black;*/
   // background-color: #444;
   display: flex;
   justify-content: center;
@@ -37,6 +43,8 @@ h1 {
   // color: rgba(255, 255, 255, 0.4);
   user-select: none;
   opacity: 90;
+  justify-content: center;
+  vertical-align: center;
 }
 
 .box:hover {
@@ -69,50 +77,62 @@ h1 {
 }
 
 .pad-1 {
-  background-image: url(./assets/8533.jpg);
-  background-size: cover;
+  background-image: url(./assets/1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .pad-2 {
-  background-image: url(./assets/196264.jpg);
-  background-size: cover;
+  background-image: url(./assets/2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .pad-3 {
-  background-image: url(./assets/8527.jpg);
-  background-size: cover;
+  background-image: url(./assets/3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .pad-4 {
-  background-image: url(./assets/190947.jpg);
-  background-size: cover;
+  background-image: url(./assets/4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .pad-5 {
-  background-image: url(./assets/187900.jpg);
-  background-size: cover;
+  background-image: url(./assets/5.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .pad-6 {
-  background-image: url(./assets/8531.jpg);
-  background-size: cover;
+  background-image: url(./assets/6.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .pad-7 {
-  background-image: url(./assets/187897.jpg);
-  background-size: cover;
+  background-image: url(./assets/7.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .pad-8 {
-  background-image: url(./assets/8526.jpg);
-  background-size: cover;
+  background-image: url(./assets/8.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .pad-9 {
-  background-image: url(./assets/8532.jpg);
-  background-size: cover;
+  background-image: url(./assets/9.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .pad-10 {
-  background-image: url(./assets/187925.jpg);
-  background-size: cover;
+  background-image: url(./assets/10.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .pad-11 {
-  background-image: url(./assets/187929.jpg);
-  background-size: cover;
+  background-image: url(./assets/11.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .pad-12 {
-  background-image: url(./assets/8528.jpg);
-  background-size: cover;
+  background-image: url(./assets/12.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
