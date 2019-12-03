@@ -29,6 +29,7 @@ h1 {
     object-fit: cover;
 }
 #camera--view, #camera--sensor{
+    -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     filter: FlipH;
 }
@@ -63,12 +64,16 @@ h1 {
 
 .box:active {
   opacity:100;
+  -webkit-transform: scale(1.1);
+  -webkit-transition: all .2s;
   transform: scale(1.1);
   transition: all .2s;
 }
 
 .active {
   opacity:100;
+  -webkit-transform: scale(1.1);
+  -webkit-transition: all .2s;
   transform: scale(1.1);
   transition: all .2s;
 }
