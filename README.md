@@ -16,7 +16,7 @@ Note: There is something not working with my react-dom-router, which seems to po
 
 #### Final Project Sketched
 [Go to folder](https://github.com/azuic/major-studio-one/tree/master/Final)
-[Go to Sketch](https://azuic.github.io/major-studio-one/Final/sketch/index.html)
+[Go to Sketch](https://azuic.github.io/major-studio-one/Final/sketch/index.html)  
 Work in Progress:
 1. UI working, still deciding if changing to kitchenwares instead of inlays etc.
 2. Trying to figure out how to record, might be able to use [pizzicato.js](https://alemangui.github.io/pizzicato/)
