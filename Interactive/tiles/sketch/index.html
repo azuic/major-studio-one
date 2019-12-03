@@ -21,7 +21,7 @@
   <video id="camera--view" autoplay></video>
 
   <script>
-    var constraints = { video: { facingMode: "environment" }, audio: false };
+    var constraints = { video: { facingMode: { exact: "environment" } }, audio: false };
     const cameraView = document.querySelector("#camera--view"),
         cameraSensor = document.querySelector("#camera--sensor")
 
