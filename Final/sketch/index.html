@@ -13,6 +13,30 @@
 <body>
 <!-- <div class="container"> -->
 <div class="pad">
+  <!-- Camera sensor -->
+  <canvas id="camera--sensor"></canvas>
+  <!-- Camera view -->
+  <video id="camera--view" autoplay></video>
+
+  <script>
+    var constraints = { video: { facingMode: { exact: "environment" } }, audio: false };
+    const cameraView = document.querySelector("#camera--view"),
+        cameraSensor = document.querySelector("#camera--sensor")
+
+    function cameraStart() {
+        navigator.mediaDevices
+            .getUserMedia(constraints)
+            .then(function(stream) {
+            track = stream.getTracks()[0];
+            cameraView.srcObject = stream;
+        })
+        .catch(function(error) {
+            console.error("Oops. Something is broken.", error);
+        });
+    }
+
+    window.addEventListener("load", cameraStart, true);
+  </script>
   <div class="box pad-1" data-code="82">R</div>
   <div class="box pad-2" data-code="84">T</div>
   <div class="box pad-3" data-code="89">Y</div>

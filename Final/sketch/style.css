@@ -30,6 +30,20 @@ h1 {
   flex-wrap: wrap;
 }
 
+#camera, #camera--view, #camera--sensor, #camera--output{
+    position: fixed;
+    height: 100%;
+    width: 100%:
+    object-fit: cover;
+    z-index: 0;
+}
+#camera--view, #camera--sensor, #camera--output{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+}
+
+
 .box {
   width: 150px;
   height: 150px;
@@ -45,6 +59,7 @@ h1 {
   opacity: 90;
   justify-content: center;
   vertical-align: center;
+  z-index: 10;
 }
 
 .box:hover {
@@ -54,12 +69,16 @@ h1 {
 
 .box:active {
   opacity:100;
+  -webkit-transform: scale(1.1);
+  -webkit-transition: -webkit-transform all .2s;
   transform: scale(1.1);
   transition: all .2s;
 }
 
 .active {
   opacity:100;
+  -webkit-transform: scale(1.1);
+  -webkit-transition: -webkit-transform all .2s;
   transform: scale(1.1);
   transition: all .2s;
 }
